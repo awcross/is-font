@@ -1,0 +1,45 @@
+{
+  "name": "is-font",
+  "version": "0.1.0",
+  "description": "Detect if a file is a font",
+  "license": "MIT",
+  "repository": "awcross/is-font",
+  "author": {
+    "name": "Alex Cross",
+    "url": "alexcross.io"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "file",
+    "font",
+    "mime",
+    "type",
+    "eot",
+    "ttf",
+    "otf",
+    "woff",
+    "woff2"
+  ],
+  "dependencies": {
+    "file-type": "*",
+    "read-chunk": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node"
+    ]
+  }
+}
