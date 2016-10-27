@@ -3,7 +3,7 @@
 const readChunk = require('read-chunk');
 const fileType = require('file-type');
 
-module.exports = function (file) {
+module.exports = file => {
 	const fileInfo = fileType(readChunk.sync(file, 0, 262)) || '';
 	const types = [
 		'eot',
