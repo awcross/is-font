@@ -19,7 +19,6 @@ isFont('awesomeFont.woff2');
 
 isFont('fakeFont.ttf');
 //=> false
-
 ```
 
 ## API
@@ -34,6 +33,10 @@ Type: `string`
 
 Path to the file.
 
+
+## Related
+
+- [is-font-cli](https://github.com/awcross/is-font-cli) - Detect if a file is a font
 
 ## License
 
