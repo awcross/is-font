@@ -2,23 +2,19 @@ import path from 'path';
 import test from 'ava';
 import isFont from './';
 
-const types = [
-	'eot',
-	'otf',
-	'ttf',
-	'woff',
-	'woff2'
+const fixtures = [
+	'fake.ttf',
+	'fixture.eot',
+	'fixture.otf',
+	'fixture.ttf',
+	'fixture.woff',
+	'fixture.woff2'
 ];
 
-function check(ext) {
-	const file = path.join(__dirname, 'fixture', `fixture.${ext}`);
-	const fileInfo = isFont(file);
+test('check valid fonts', t => {
+	fixtures.slice(1).forEach(file => t.truthy(isFont(path.join('fixture', file))));
+});
 
-	return fileInfo.ext;
-}
-
-types.forEach(type => {
-	test(type, t => {
-		t.is(check(type), type);
-	});
+test('check invalid fonts', t => {
+	fixtures.slice(0, 1).forEach(file => t.false(isFont(path.join('fixture', file))));
 });
