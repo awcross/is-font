@@ -1,4 +1,4 @@
-# is-font [![Build Status](https://travis-ci.org/awcross/is-font.svg?branch=master)](https://travis-ci.org/awcross/is-font)
+# is-font [![Build Status](https://travis-ci.org/awcross/is-font.svg?branch=master)](https://travis-ci.org/awcross/is-font) [![Coverage Status](https://coveralls.io/repos/github/awcross/is-font/badge.svg?branch=master)](https://coveralls.io/github/awcross/is-font?branch=master)
 
 > Detect if a file is a font
 
@@ -36,7 +36,7 @@ Path to the file.
 
 ## Related
 
-- [is-font-cli](https://github.com/awcross/is-font-cli) - Detect if a file is a font
+- [is-font-cli](https://github.com/awcross/is-font-cli) - CLI for this module
 
 ## License
 
