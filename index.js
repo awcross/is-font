@@ -4,7 +4,7 @@ const readChunk = require('read-chunk');
 const fileType = require('file-type');
 
 module.exports = file => {
-	const fileInfo = fileType(readChunk.sync(file, 0, 262)) || '';
+	const fileInfo = fileType(readChunk.sync(file, 0, 262));
 	const types = [
 		'eot',
 		'otf',
@@ -13,7 +13,7 @@ module.exports = file => {
 		'woff2'
 	];
 
-	if (types.indexOf(fileInfo.ext) > -1) {
+	if (fileInfo && types.indexOf(fileInfo.ext) > -1) {
 		return fileInfo;
 	}
 
