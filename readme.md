@@ -14,10 +14,10 @@ $ npm install --save is-font
 ```js
 const isFont = require('is-font');
 
-isFont('awesomeFont.woff2');
+isFont('awesome.woff2');
 //=> {ext: woff2, mime: application/font-woff}
 
-isFont('fakeFont.ttf');
+isFont('fake.ttf');
 //=> false
 ```
 
@@ -32,6 +32,15 @@ Returns an object if true. False otherwise.
 Type: `string`
 
 Path to the file.
+
+
+## Supported file types
+
+- [`eot`](https://en.wikipedia.org/wiki/Embedded_OpenType)
+- [`otf`](https://en.wikipedia.org/wiki/OpenType)
+- [`ttf`](https://en.wikipedia.org/wiki/TrueType)
+- [`woff`](https://en.wikipedia.org/wiki/Web_Open_Font_Format)
+- [`woff2`](https://en.wikipedia.org/wiki/Web_Open_Font_Format)
 
 
 ## Related
