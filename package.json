@@ -30,15 +30,15 @@
     "woff2"
   ],
   "dependencies": {
-    "file-type": "*",
+    "file-type": "^4.1.0",
     "read-chunk": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "*",
-    "coveralls": "^2.11.14",
-    "globby": "^6.0.0",
-    "nyc": "^8.3.2",
-    "xo": "*"
+    "ava": "^0.17.0",
+    "coveralls": "^2.11.15",
+    "globby": "^6.1.0",
+    "nyc": "^10.1.2",
+    "xo": "0.17.1"
   },
   "xo": {
     "esnext": true,
